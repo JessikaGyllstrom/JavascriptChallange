@@ -61,3 +61,30 @@ function reverseArray (myArray) {
 }
 reverseArray([1,2,3]); // 3,2,1
 reverseArray([5,6,8,3,2,3,8,4,9]); // 9, 4, 8, 3, 2, 3, 8, 6, 5
+
+// 6. Sort an array from lowest to highest
+var numArray = [500, 104, 5, 77, 98];
+numArray.sort(function(a, b) {
+  return a - b;
+});
+console.log(numArray);
+
+// 7. Create a function that filters out negative numbers
+/* In this challenge, you'll have a function that takes an 
+array as an input and returns an array. But if all 
+goes according to plan, it'll remove the negative numbers. 
+This is another example of a task that'll be useful when 
+combing through data and looking for clever ways to eliminate "bad data." */
+function removeNeg (numberArray) {
+    let newArray = numberArray;
+    for(let i = 0; i < numberArray.length; i++) {
+        if(numberArray[i]<0){
+            newArray[i] = 0;
+        }
+        else{
+            newArray[i] = numberArray[i];
+        }
+        console.log(newArray[i]);
+    }
+}
+removeNeg([-2,-4, -6, 8]);
