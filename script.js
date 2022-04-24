@@ -93,3 +93,17 @@ removeNeg([-2,-4, -6, 8]);
 let text = "                Heres   lots                        of      whitespace  .   ";
 let result = text.replaceAll(' ','');
 console.log(result);
+
+// 9. Return a Boolean if a number is divisible by 10
+function division (a) {
+    if(a%10==0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+} 
+console.log(division(20)); // true
+console.log(division(12)); // false
+
+
