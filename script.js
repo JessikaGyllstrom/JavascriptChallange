@@ -22,4 +22,33 @@ function kmToMiles(km) {
 console.log(kmToMiles(5)); // 3.107
 console.log(kmToMiles(74)); // 45.991
 
-/* 4. Calculate the sum of numbers within an array
+/* 4. Calculate the sum of numbers within an array */
+let array = [-1,-2,-3,-5,-2,-8,-9,-1];
+let sum = 0;
+for(let i = 0; i < array.length; i++) {
+    sum = sum + array[i];
+}
+console.log(sum);
+/* Bonus intermediate challenge: Create a function 
+that can return the sum of a particular column or 
+row number in a table. */ 
+
+let nestedArray = [[1,2,3],[4,5,6],[7,8,9]];
+let total = 0;
+function sumOfRow(rowNum) {
+    for(var i = 0; i < nestedArray[rowNum].length; i++) {
+        total = total + nestedArray[rowNum][i];
+        console.log(nestedArray[rowNum][i]);
+    }
+    return total;
+}
+console.log(sumOfRow(1));
+
+let sumCol = 0;
+function sumOfColumn(colNum) {
+    for(var i = 0; i < nestedArray[colNum].length; i++) {
+        sumCol = sumCol + nestedArray[i][colNum];
+    }
+    return sumCol;
+}
+console.log(sumOfColumn(0));
