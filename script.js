@@ -88,3 +88,8 @@ function removeNeg (numberArray) {
     }
 }
 removeNeg([-2,-4, -6, 8]);
+
+// 8. Remove the spaces found in a string
+let text = "                Heres   lots                        of      whitespace  .   ";
+let result = text.replaceAll(' ','');
+console.log(result);
