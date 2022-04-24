@@ -52,3 +52,12 @@ function sumOfColumn(colNum) {
     return sumCol;
 }
 console.log(sumOfColumn(0));
+
+// 5. Create a function that reverses an array
+function reverseArray (myArray) {
+    let array = myArray.reverse();
+    console.log(array);
+    return array;
+}
+reverseArray([1,2,3]); // 3,2,1
+reverseArray([5,6,8,3,2,3,8,4,9]); // 9, 4, 8, 3, 2, 3, 8, 6, 5
