@@ -106,4 +106,18 @@ function division (a) {
 console.log(division(20)); // true
 console.log(division(12)); // false
 
+// 10. Return the number of vowels in a string
+// vowels: a, e, i, o, u 
+function vowelsCounter (myString) {
+    let numOfVowels = 0;
+    for (let i = 0; i < myString.length; i++) {
+        if(myString[i]=== 'a'|| myString[i]=== 'e' || myString[i]=== 'i'|| 
+        myString[i]=== 'o'|| myString[i]=== 'u') {
+            numOfVowels ++;
+        };
+    }
+    return numOfVowels;
+}
+console.log(vowelsCounter("Hello World! Konnichiwa"));
+
 
